@@ -1,34 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">	
   <head>
+    <title>Ultrakill Calculator</title>
     <meta id="amogus" property="og:image" content="https://media.discordapp.net/attachments/831714212970627103/840369368206671872/caption-5-2.gif">
     <meta property="og:type" content="video.other">
     <meta property="og:video:url" content="https://www.youtube.com/embed/OjNpRbNdR7E">
     <meta property="og:video:width" content="1280">
     <meta property="og:video:height" content="720">
-  
-<script>
-// var x = Math.floor(Math.random() * 7);
-//  
-//  if (x < 1){
-//	x = x + 1;
-//}
-//  
-//  if (x == 1) {
-//	document.getElementById("amogus").content = "https://cdn.discordapp.com/attachments/974703255768662086/975051504849387520/onegif.gif";
-//} else if (x == 2) {
-//	document.getElementById("amogus").content = "https://cdn.discordapp.com/attachments/974703255768662086/975051791349723147/twogif.gif";
-//} else if (x == 3) {
-//	document.getElementById("amogus").content = "https://cdn.discordapp.com/attachments/974703255768662086/975052064377958440/threegif.gif";
-//} else if (x == 4) {
-//	document.getElementById("amogus").content = "https://cdn.discordapp.com/attachments/974703255768662086/975052160209395852/fourgif.gif";
-//} else if (x == 5) {
-//	document.getElementById("amogus").content = "https://cdn.discordapp.com/attachments/974703255768662086/975052383153430538/fivegif.gif";
-//} else {
-//	document.getElementById("amogus").content = "https://cdn.discordapp.com/attachments/974703255768662086/975052568533278800/sixgif.gif";
-//}
-</script>
  </head>
-  <body>
+  <body style="background-color: green; font-family: VCR OSD MONO; background-image: url(background-image-ultrakill.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;  min-height: 1500px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;>">
+
+  <div class="parallax">
+  
+  <h1 style="color: white; text-align: center; padding-top 75px; font-size: 70px; float: center; padding-bottom: 40px; aligh: center;">ULTRAKILL CALCULATOR</h1>
+  
+  <div style="align: center; float: center; padding-left: 600px; padding-bottom: 90px;">
+  <h2 id="calcmsg"></h2>
+  <input type="button" id="ok" name="enemy" value="Calculate">
+  </div>
+  
+  <img src="unkown.png" id="weaponimage" style="float: left; padding-top: 200px; padding-left: 10px; align: left;"></img>
+  <img src="unkown.png" id="enemyimage" style="float: right; padding-top: 200px; padding-right: 10px; align: right;"></img>
+  
+<form style="color: white; font-size: 25px; float: left; padding-top: 50px; padding-bottom: 50px;">
+  <input type="radio" id="bluerevolver" name="weapon" value="Blue Revolver">
+  <label for="bluerevolver">Blue Revolver</label><br>
+
+  <input type="radio" id="greenrevolver" name="weapon" value="Green Revolver">
+  <label for="bluerevolver">Green Revolver</label><br>
+
+  <input type="radio" id="greenrevolver" name="weapon" value="Green Revolver">
+  <label for="greenrevolver">Green Revolver</label><br>
+
+  <input type="radio" id="altrevolver" name="weapon" value="Alternate Revolver">
+  <label for="altrevolver">Alternate Revolver</label><br>
+
+  <input type="radio" id="altrevolvercharge" name="weapon" value="Alternate Revolver Charge">
+  <label for="altrevolvercharge">Alternate Revolver Charge</label><br>
+
+  <input type="radio" id="blueshotgun" name="weapon" value="Blue Shotgun">
+  <label for="blueshotgun">Blue Shotgun</label><br>
+
+  <input type="radio" id="greenshotgun" name="weapon" value="Green Shotgun">
+  <label for="greenshotgun">Green Shotgun</label><br>
+
+  <input type="radio" id="greenshotgunthreeplus" name="weapon" value="Green Shotgun Three Plus">
+  <label for="greenshotgunthreeplus">Green Shotgun Three Plus Charges</label><br>
+
+  <input type="radio" id="bluenailgun" name="weapon" value="Blue Nailgun">
+  <label for="bluenailgun">Blue Nailgun</label><br>
+
+  <input type="radio" id="greennailgun" name="weapon" value="Green Nailgun">
+  <label for="greennailgun">Green Nailgun</label><br>
+
+  <input type="radio" id="greennailgunoverheat" name="weapon" value="Green Nailgun Overheat">
+  <label for="greennailgunoverheat">Green Nailgun</label><br>
+
+  <input type="radio" id="altnailgun" name="weapon" value="Alternate Nailgun">
+  <label for="altnailgun">Alternate Nailgun</label><br>
+
+  <input type="radio" id="bluerailcannon" name="weapon" value="Blue Railcannon">
+  <label for="bluerailcannon">Blue Railcannon</label><br>
+
+  <input type="radio" id="greenrailcannon" name="weapon" value="Green Railcannon">
+  <label for="greenrailcannon">Green Railcannon</label><br>
+
+  <input type="radio" id="redrailcannon" name="weapon" value="Red Railcannon">
+  <label for="redrailcannon">Red Railcannon</label><br>
+
+  <input type="radio" id="bluehand" name="weapon" value="Blue Arm Punch">
+  <label for="bluearm">Blue Arm Punch</label><br>
+
+  <input type="radio" id="parry" name="weapon" value="Parry">
+  <label for="parry">Parry</label><br>
+
+  <input type="radio" id="redhand" name="weapon" value="Red Arm Punch">
+  <label for="redarm">Red Arm Punch</label><br>
+
+  <input type="radio" id="redhandshock" name="weapon" value="Red Arm Shockwave">
+  <label for="redarmshock">Red Arm Shockwave</label><br>
+
+  <input type="radio" id="coinpunch" name="weapon" value="Coin Punch">
+  <label for="coinpunch">Coin Punch</label><br>
+</form>
+
+
+
+  <form style="color: white; font-size: 25px; float: right; padding-top: 50px; padding-right: 40px;">
+  <input type="radio" id="filth" name="enemy" value="Filth">
+  <label for="filth">Filth</label><br>
+
+  <input type="radio" id="stray" name="enemy" value="Stray">
+  <label for="stray">Stray</label><br>
+
+  <input type="radio" id="schism" name="enemy" value="Schism">
+  <label for="schism">Schism</label><br>
+
+  <input type="radio" id="schism" name="enemy" value="Schism">
+  <label for="schism">Schism</label><br>
+
+  <input type="radio" id="soldier" name="enemy" value="Soldier">
+  <label for="soldier">Soldier</label><br>
+
+  <input type="radio" id="stalker" name="enemy" value="Stalker">
+  <label for="stalker">Stalker</label><br>
+
+  <input type="radio" id="stalker" name="enemy" value="Stalker">
+  <label for="stalker">Stalker</label><br>
+
+  <input type="radio" id="insurrectionist" name="enemy" value="Insurrectionist">
+  <label for="insurrectionist">Insurrectionist</label><br>
+
+  <input type="radio" id="insurrectionist_boss" name="enemy" value="Insurrectionist Boss">
+  <label for="insurrectionist_boss">Insurrectionist Boss</label><br>
+
+  <input type="radio" id="malface" name="enemy" value="Malicious Face">
+  <label for="malface">Malicious Face</label><br>
+
+  <input type="radio" id="malface_boss" name="enemy" value="Malicious Face Boss">
+  <label for="malface_boss">Malicious Face Boss</label><br>
+
+  <input type="radio" id="cerberus" name="enemy" value="Cerberus">
+  <label for="cerberus">Cerberus</label><br>
+
+  <input type="radio" id="cerberus_boss" name="enemy" value="Cerberus Boss">
+  <label for="cerberus_boss">Cerberus Boss</label><br>
+
+  <input type="radio" id="mass" name="enemy" value="Hideous Mass">
+  <label for="mass">Hideous Mass</label><br>
+  
+  <input type="radio" id="swordsmachine" name="enemy" value="Swordsmachine">
+  <label for="swordsmachine">Swordsmachine</label><br>
+
+  <input type="radio" id="swordsmachine_boss" name="enemy" value="Swordsmachine Boss">
+  <label for="swordsmachine_boss">Swordsmachine Boss</label><br>
+
+  <input type="radio" id="swordsmachine_secret_boss" name="enemy" value="Tundra">
+  <label for="swordsmachine_secret_boss">Tundra</label><br>
+
+  <input type="radio" id="drone" name="enemy" value="Drone">
+  <label for="drone">Drone</label><br>
+
+  <input type="radio" id="streetcleaner" name="enemy" value="Streetcleaner">
+  <label for="streetcleaner">Streetcleaner</label><br>
+
+  <input type="radio" id="mindflayer" name="enemy" value="Mindflayer">
+  <label for="mindflayer">Mindflayer</label><br>
+
+  <input type="radio" id="virtue" name="enemy" value="Virtue">
+  <label for="virtue">Virtue</label><br>
+
+  <input type="radio" id="v2_moon" name="enemy" value="Lunar V2">
+  <label for="v2_moon">Lunar V2</label><br>
+
+  <input type="radio" id="v2_sun" name="enemy" value="Solar V2">
+  <label for="v2_sun">Solar V2</label><br>
+
+  <input type="radio" id="minoshand" name="enemy" value="M. Corpse Hand">
+  <label for="minoshand">M. Corpse Hand</label><br>
+
+  <input type="radio" id="minoshead" name="enemy" value="M. Corpse Head">
+  <label for="minoshead">M. Corpse Head</label><br>
+
+  <input type="radio" id="gabriel" name="enemy" value="Gabriel">
+  <label for="gabriel">Gabriel</label><br>
+
+  <input type="radio" id="fleshprison" name="enemy" value="Flesh Prison">
+  <label for="fleshprison">Flesh Prison</label><br>
+
+  <input type="radio" id="fleshprison_minion" name="enemy" value="Flesh Prison Eye">
+  <label for="fleshprison_minion">Flesh Prison Eye</label><br>
+
+  <input type="radio" id="minimalface" name="enemy" value="Small Malicious Face">
+  <label for="minimalface">Small Malicious Face</label><br>
+
+  <input type="radio" id="minosprime" name="enemy" value="Minos Prime">
+  <label for="minosprime">Minos Prime</label><br>
+
+  <input type="radio" id="somethingwicked" name="enemy" value="Something Wicked">
+  <label for="somethingwicked">Something Wicked</label><br>
+
+  <input type="radio" id="cancerousrodent" name="enemy" value="Cancerous Rodent">
+  <label for="cancerousrodent">Cancerous Rodent</label><br>
+
+  <input type="radio" id="cancerousrodent" name="enemy" value="Cancerous Rodent">
+  <label for="cancerousrodent">Cancerous Rodent</label><br>
+
+  <input type="radio" id="verycancerousrodent" name="enemy" value="Very Cancerous Rodent">
+  <label for="verycancerousrodent">Very Cancerous Rodent</label><br>
+
+  <input type="radio" id="knightandowl" name="enemy" value="Knight and Owl">
+  <label for="knightandowl">Knight and Owl</label><br>
+</form>
+
+</div>
+  
+  <script>
+  // why did i do this?
+  var selectedenemy
+  var selectedweapon
+  
+  var selecteddamage
+  var selectedhp
+  
+  var result
+  
+  var blue_revolver = 0.49;
+  var green_revolver = 0.49;
+  var blue_shotgun = 3;
+  var green_shotgun_nocharge = 2.5;
+  var green_shotgun_maxcharge = 10;
+  var blue_nailgun = 5.125;
+  var green_nailgun = 4.625;
+  var green_nailgun_overheat = 11.47;
+  var blue_railcannon = 8;
+  var green_railcannon = 10.25;
+  var red_railcannon = 8.25;
+  var blue_arm = 1;
+  var parry = 5;
+  var green_arm = 0.2;
+  var red_arm_punch = 2.5;
+  var red_arm_shock = 1;
+  var alternate_revolver = 2.5;
+  var alternate_revolver_charge = 7.5;
+  var alternate_nailgun = 0.75;
+  var coin_punch = 2;
+  
+  var filth = 0.5;
+  var stray = 1.5;
+  var schism = 5;
+  var soldier = 2.5;
+  var stalker = 3.5;
+  var insurrectionist = 75;
+  var insurrectionist_boss = 110;
+  var malface = 15
+  var malface_boss = 25;
+  var cerberus = 22;
+  var cerberus_boss = 80;
+  var mass = 175;
+  var swordsmachine = 15;
+  var swordsmachine_boss = 75;
+  var swordsmachine_secret_boss = 50;
+  var drone = 2;
+  var streetcleaner = 4.5;
+  var mindflayer = 30;
+  var virtue = 10;
+  var v2_moon = 40;
+  var v2_sun = 110;
+  var minos_corpse_head = 160;
+  var minos_corpse_hand = 65;
+  var gabriel = 100;
+  var fleshprison = 100;
+  var fleshprison_minion = 1;
+  var minimalface = 2;
+  var minos_prime = 130;
+  var somethingwicked = 0.01;
+  var cancerousrodent = 0.01;
+  var verycanceriousrodent = 50;
+  var knightandowl = 80;
+  
+  //i want to die
+  
+  // spicy calculations
+  result = selectedhp / selecteddamage;
+  document.getElementById("calcmsg").innerHTML = result;
+  </script>
+  
   </body>
 </html>
